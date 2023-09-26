@@ -31,6 +31,7 @@ export function SelectionUnit({
       newRoster.warbands[warbandNumFocus].points =
         newRoster.warbands[warbandNumFocus].points + newUnitData.base_points;
       newRoster.warbands[warbandNumFocus].max_units = newUnitData.warband_size;
+      active_factions[active_factions.length] = faction;
       if (newUnitData.unit_type == "Siege Engine") {
         newRoster.warbands[warbandNumFocus].num_units =
           newRoster.warbands[warbandNumFocus].num_units +
